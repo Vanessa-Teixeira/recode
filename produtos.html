@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Produtos - Full Stack Eletro</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <script src="./js/funcoes.js"></script>
+
+       
+        
+    </head>
+    <body>
+        <a href="index.html">Página inicial</a>
+        <!--Menu-->
+        
+        <nav class="menu">
+            <a href="index.html"><img width="100px" src="./imagens/logo.jpg" width="100px">
+            <a href="produtos.html">Produtos</a> 
+            <a href="loja.html">Nossas Lojas</a> 
+            <a href="contatos.html">Contatos</a>
+        </nav>
+        <header>
+           <h3>Produtos</h3> 
+        </header>
+       <hr>
+       <section class="categorias"> <!--Categoria de produtos da loja-->
+           <ul>
+            <h3>Categorias</h3>
+            <br>
+            <li onclick="exibir_todos()">Todos(12)</li>
+            <br>
+            <li onclick="exibir_categoria('geladeira')">Geladeira(3)</li>
+            <br>
+            <li onclick="exibir_categoria('fogao')">Fogões (3)</li>
+            <br>
+            <li onclick="exibir_categoria('microondas')">Microodas (3)</li>
+            <br>
+            <li onclick="exibir_categoria('Lavalouca')">Lava-louça(1)</li>
+            <br>
+            <li onclick="exibir_categoria('Maquinadelavar')">Maquina de Lavar (2)</li>
+            <br>
+         </ul>
+
+        </section>
+
+         <section class="produtos"> <!--dIV PRINCIPAL DOS PRODUTOS DA LOJA-->
+             
+             <div class="box_produto" id="geladeira" style="display: block;" ><!--dIV FILHA COM as configuraçoes dos produtos e imagem-->
+                
+                        <img src="./imagens/geladeira4.jpg" width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Geladeira Inox 2 portas - 110/220w</p>
+                         <hr>
+                        <p class="descrição"><strike>R$ 4000,00, á vista</strike></p>
+                        <p class="preço">R$ 2000,00, á vista</p>
+                        </div>
+
+            <div class="box_produto" id="geladeira" style="display: block;">
+               
+                        <img src="./imagens/geladeira1.jpg"  width="120px"onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Geladeira Branca de 500 litros, 2 portas.</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 6000,00, á vista</strike></p>
+                        <p class="preço">R$ 3000,00, á vista</p>
+                        </div>
+           <div class="box_produto"id="geladeira" style="display: block;">
+            
+                         <img src="./imagens/geladeira.jpg" width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Geladeira Inox 2 portas / Linha Inox Eletrolux </p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 2000,00, á vista</strike></p>
+                        <p class="preço">R$ 1500,00, á vista</p>
+                        </div>
+            <div class="box_produto"id="fogao" style="display: block;">
+               
+                         <img src="./imagens/folgao.jpg" width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Fogão 4 bocas com forno elétrico - automático</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 400,00, á vista</strike></p>
+                        <p class="preço">R$ 300,00, á vista</p>
+                        </div>
+        
+            <div class="box_produto" id="fogao" style="display: block;">
+               
+                         <img src="./imagens/fogao6.jpg"  width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Fogão 6 bocas - Forno elétrico - 110/220.</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 600,00, á vista</strike></p>
+                        <p class="preço">R$ 500,00, á vista</p>
+                        </div>
+            <div class="box_produto"id="fogao" style="display: block;" >
+                
+                         <img src="./imagens/fogao2.jpg" width="120px"  onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Fogão elétrico - 2 bocas automático</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 700,00 á vista</strike></p>
+                        <p class="preço">R$ 600,00 á vista</p>
+                        </div>
+            <div class="box_produto" id="microondas" style="display: block;">
+                
+                        <img src="./imagens/microo.jpg"  width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Microodas Philco - 18 litros - Inox.</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 900,00, á vista</strike></p>
+                        <p class="preço">R$ 750,00 á vista</p>
+                        </div>
+                
+            <div class="box_produto" id="microondas" style="display: block;">
+                
+                         <img src="./imagens/microondas.jpg" width="120px"onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Microodas preto - 10 litros- 110/220w</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 400,00, á vista</strike></p>
+                        <p class="preço">R$ 350,00, á vista</p>
+                        </div>
+            <div class="box_produto" id="microondas" style="display: block;">
+                
+                        <img src="./imagens/microondas2.jpg" width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Microondas Branco - 8 litros 110 w</p>
+                         <hr>
+                        <p class="descrição"><strike>R$ 2000,00, á vista</strike></p>
+                        <p class="preço">R$ 1500,00, á vista</p>
+                        </div>
+             <div class="box_produto" id="Lavalouca" style="display: block;">
+               
+                       <img src="./imagens/lava.jpg" width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Lava- louça 50 litros - linha branca</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 1500,00 á vista</strike></p>
+                        <p class="preço">R$ 1000,00 á vista</p>
+                        </div>
+                        
+            <div class="box_produto"  id = "Maquinadelavar" style="display: block;">
+               
+                         <img src="./imagens/maquina.jpg"  width="120px"onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <p class="descrição">Máquina de lavar roupa 10 litros - Linhas branca.</p>
+                         <hr>
+                        <p class="descrição"><strike>R$ 1500,00 á vista</strike></p>
+                        <p class="preço">R$ 1399,00 á vista</p>
+                       </div>
+            <div class="box_produto" id = "Maquinadelavar" style="display: block;">
+               
+                
+                       <img src="./imagens/maquina2.jpg"  width="120px" onmousemove="aumentar(this)" onmouseout="diminuir(this)">
+                        <br>
+                        <p class="descrição">Máquina de Lavar - linha branca - 18 litros</p>
+                        <hr>
+                        <p class="descrição"><strike>R$ 2000,00, á vista</strike></p>
+                        <p class="preço">R$ 1500,00, á vista</p>
+                        </div>
+            
+
+</section>
+
+        
+            
+    </body>
+    <footer id="rodape2">
+    <p id="rodape1"> Formas de Pagamento</p>
+    <img src="./imagens/1.jpg" alt="Forma de pagamento" width="350" align="center">
+    <p>&copy;Recode pro</p>
+</footer>
+</html>
