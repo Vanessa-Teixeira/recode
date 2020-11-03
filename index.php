@@ -8,14 +8,9 @@
     </head>
     <body> 
        <!--Menu principal-->
-
-        <nav class="menu">
-            <a href="index.html"><img width="100px" src="./imagens/logo.jpg" width="100px">
-            <a href="produtos.html">Produtos</a> 
-            <a href="loja.html">Nossas Lojas</a> 
-            <a href="contatos.html">Contatos</a>
-        </nav>
-        <main>
+<?php
+include('menu.html');
+?>
           <h1>Seja bem vindo</h1>
         <p><b>Aqui em nossa Loja ,programadores tem descontos!Produtos na  sua casa.</b></p>
         </main>

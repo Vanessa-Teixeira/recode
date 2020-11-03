@@ -8,14 +8,11 @@
    
 </head>
 <body>
-    <a href="index.html">Página inicial</a>
 
-    <nav class="menu">  <!-- MENU PRINCIPAL DO SITE -->
-        <a href="index.html"><img width="100px" src="./imagens/logo.jpg" width="100px">
-        <a href="produtos.html">Produtos</a> 
-        <a href="loja.html">Nossas Lojas</a> 
-        <a href="contatos.html">Contatos</a>
-    </nav>
+
+    <?php
+include('menu.html');
+?>
     <main>
         <h1> Nossas Lojas</h1> <!-- ENDEREÇO COM TODAS AS LOJAS,-->
     </main>
